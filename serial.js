@@ -22,7 +22,7 @@ var sp = new  serialport.SerialPort("/dev/ttyUSB0", {
 });
 
 var webserver = http.createServer(function (request, response) {
-    fs.readFile("client.html", 'utf-8', function (error, data) {
+    fs.readFile("serial.html", 'utf-8', function (error, data) {
         response.writeHead(200, {'Content-Type':'text/html'});
         response.write(data);
         response.end();
