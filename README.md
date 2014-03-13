@@ -37,7 +37,7 @@ node serial.js
 
 ### TCP 
 
-Edit serial.html
+Edit tcp.html
 ```
 var socketio = io.connect("REMOTE_SERVER_ADRESS:REMOTE_SERVER_PORT");
 ```
